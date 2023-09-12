@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/upload_ok_text_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/done_or_not_title"
+        android:textSize="32sp"
+        android:textAllCaps="true"
+        android:background="@color/design_default_color_primary_dark"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/dialog_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/upload_was_successfully_done"
+        android:src="@drawable/ic_baseline_message_24" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cloors" />
+
+
+    <Space
+        android:layout_width="438dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:drawableBottom="@drawable/ic_baseline_done_24"
+            android:shadowColor="#807A7A"
+
+            android:text="@string/ok_continue"
+            android:textColor="@color/successfully_uploaded1_background"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="241dp"
+            android:layout_height="166dp"
+            android:background="#fff"
+            android:drawableBottom="@drawable/ic_baseline_cancel_24"
+
+
+            android:text="@string/finish_and_leaave"
+
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finish_area_label"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/finish_area"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_baseline_done_24"
+            android:text=""
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/cancel_and_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_baseline_cancel_24"
+            android:text=""
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scankitdemo.core.FormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-353dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/enterPocet"
+            android:layout_width="419dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:gravity="center"
+            android:text="zadej počet kusů"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CODE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#E68100"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/zadej_pocet_kusu"
+            android:inputType="number"
+            android:textAllCaps="true"
+            android:textSize="75sp"
+            android:textStyle="bold"
+            android:background="#f5f7ba"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_temp_btn"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/continueBtn"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:background="#51B62A"
+            android:text="Continue"
+            android:textSize="34sp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="269dp"
+            android:visibility="gone">
+
+        </ListView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/ic_baseline_exit_to_app_24"
+            android:text="@string/button_ok_beegees"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/leaveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_exit_to_app_on_pcs_24"
+            android:onClick="buttonRender"
+            tools:ignore="OnClick"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

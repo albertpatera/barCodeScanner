@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:orientation="vertical">
+
+
+        <Toolbar
+            android:layout_width="429dp"
+            android:layout_height="69dp"
+            android:background="#000"
+            android:gravity="center"
+            android:title="SKEN ČÁROVÝCH KÓDU"
+            android:titleTextColor="#fff"
+
+
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:height="45sp"
+            android:background="#159753"
+            android:onClick="buttonInitialize"
+            android:text="+"
+            android:textSize="50sp"
+            android:visibility="gone" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clors_dis" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:padding="15dp" />
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/clors_dis"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:text="@string/mwc_subject"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="263dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="24dp"
+                android:text="@string/mwc_detail"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <Button
+
+            android:id="@+id/button_scan1"
+            android:layout_width="361dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/clors_btn"
+            android:onClick="loadScanKitBtnClick"
+            android:text="@string/btn_scan_label_text"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+
+            android:id="@+id/button_scan_continue"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#159753"
+            android:onClick="loadScanForContinue"
+            android:text="Pokračovat ve SCAN"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+
+            android:id="@+id/start_with_new_File"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#159753"
+            android:onClick="startWithNeFileBtn"
+            android:text="začít s novým souborem"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_scan3"
+            android:layout_width="369dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/scankit_mask"
+            android:enabled="true"
+            android:onClick="newViewBtnClick"
+            android:text="@string/customized_view_decode"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="34sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button_upload_to_server"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#558B2F"
+            android:enabled="true"
+            android:onClick="OnClickUploadToServer"
+            android:text="✅⤴ datová výměna"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/button_scan4"
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clors_btn"
+            android:onClick="bitmapBtnClick"
+            android:text="@string/bitmap_api_decode"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_scan5"
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clors_btn"
+            android:onClick="multiProcessorSynBtnClick"
+            android:text="@string/multiProcessor_api_syn_decode"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_scan6"
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clors_btn"
+            android:onClick="multiProcessorAsynBtnClick"
+            android:text="@string/multiProcessor_api_asyn_decode"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="310dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clors_btn"
+            android:onClick="generateQRCodeBtnClick"
+            android:text="@string/generate_QR_code"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#b52e16"
+            android:padding="5sp"
+            android:text="🗑   SMAZAT SOUBORY"
+            android:textColor="#FFFF"
+            android:textSize="35sp"
+            android:onClick="deleteFilesAnyway"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="89dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- permission for WiFI post processing,not for scankit itself -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- read permission for Bitmap Mode -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- write permission for save QRCODE Bitmap,not for scankit itself -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+        Permissions how to manage file and folder in Main Activity via XML method
+    -->
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/scan_kit_logo"
+        android:label="2D SCAN"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.example.scankitdemo.core.FormActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.scankitdemo.core.FinalRenderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.scankitdemo.core.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="com.example.scankitdemo.core.TenpActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.scankitdemo.core.InseertActivity"
+            android:exported="false"
+            android:label="@string/title_activity_inseert"
+            android:theme="@style/AppTheme" /> <!-- android:theme="@style/Theme.ScanKitDemo.NoActionBar" /> -->
+
+
+        <activity
+            android:name="com.example.scankitdemo.core.MainCoreActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.scankitdemo.CommonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemo.DefinedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemo.GenerateCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemo.DisPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemo.DisPlayMulActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.scankitdemo.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity" />
+        <activity
+            android:name="com.example.scankitdemokotlin.CommonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemokotlin.DefinedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemokotlin.GenerateCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemokotlin.DisPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemokotlin.DisPlayMulActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.scankitdemokotlin.MainActivity"
+            android:screenOrientation="portrait" />
+
+
+    </application>
+
+</manifest>

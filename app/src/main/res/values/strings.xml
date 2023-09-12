@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">BarScan</string>
+    <string name="title">Scan</string>
+    <string name="scan_tip">Place the code within the frame</string>
+    <string name="no_code_tip">No code detected.</string>
+    <string name="confirm">OK</string>
+    <string name="light">Touch for more light</string>
+    <string name="light_off">Turn off light</string>
+        <string name="default_view_decoe">Zahájit nové skenování</string>
+    <string name="photo_decode">Decode Photo</string>
+    <string name="customized_view_decode">Secondary scan</string>
+    <string name="bitmap_api_decode">Bitmap Mode</string>
+    <string name="multiProcessor_api_syn_decode">MultiProcessor API Synchronous Mode</string>
+    <string name="multiProcessor_api_asyn_decode">MultiProcessor API Asynchronous Mode</string>
+    <string name="generate_QR_code">Generate QR Code</string>
+    <string name="barcode_width">Barcode width:</string>
+    <string name="barcode_height">Barcode height:</string>
+    <string name="barcode_type">Type:</string>
+    <string name="barcode_color">Color:</string>
+    <string name="barcode_backgroundcolor">Background:</string>
+    <string name="barcode_margin">Margin:</string>
+    <string name="width_value">700</string>
+    <string name="height_value">700</string>
+    <string name="generate_barcode">Generate Barcode</string>
+    <string name="save_barcode">Save Barcode</string>
+    <string name="barcode_content">Barcode Content:</string>
+    <string name="content_detail">HUAWEI Scan Kit scans and parses all major 1D and 2D barcodes, helping you quickly build barcode scanning functions into your apps.</string>
+    <string name="content_detailb">MultiCodeDecoder：Decode Multi Codes</string>
+    <string name="title_result">Result</string>
+    <string name="code_format">Code Format</string>
+    <string name="result_type">Result Type</string>
+    <string name="result_content">Result</string>
+    <string name="copy">Copy</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="connect_network">Connet to network</string>
+    <string name="add_calendar">Add to calendar</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="call">Call</string>
+    <string name="nivigation">Nivigation</string>
+    <string name="send_email">Send Email</string>
+    <string name="copy_toast">Content has been copied</string>
+    <string name="open_browser">Open in browser</string>
+    <string name="mwc_title">BarScan</string>
+    <string name="mwc_subject">SKEN 2D KÓDŮ</string>
+    <string name="mwc_detail">Tento program byl vytvořen za účelem evidence skladových zásob. Vyvořil programátor Albert Patera (https://albertpatera.cz)</string>
+    <string name="scan_showresult">Scan results will show on screen</string>
+    <string name="upload_data_to_server_button_text" translatable="false"> Nahrát data na server</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_inseert">InseertActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="zadej_pocet_kusu">POČET KS</string>
+    <string name="upload_complete_successfully_alert_dialog">Upload úspěšně dokončen</string>
+    <string name="use_desktop_app_alert">Nyní použijte aplikaci pro PC</string>
+    <string name="app_is_installed_in_location">aplikace je nainstalovaná na Pro PC</string>
+    <string name="upload_was_successfully_done">Upload was successfully done</string>
+    <string name="click_to_upload_cloud_symbol">Click to \'\'UPLOAD CLOUD SYMBOL\'\'</string>
+    <string name="add_temp_btn">pridat</string>
+    <string name="done_or_not_title">ukončit</string>
+    <string name="end_app">Ukončit aplikaci</string>
+    <string name="ok_continue">Ok, pokračovat</string>
+    <string name="finish_and_leaave">Ukončit</string>
+    <string name="button_ok_beegees">OK !</string>
+    <string name="finishing_final">ukončit aplikaci</string>
+    <string name="t5odo">T5ODO</string>
+    <string name="submit" />
+    <string name="e">e</string>
+    <string name="btn_scan_label_text">Nové skenování</string>
+</resources>

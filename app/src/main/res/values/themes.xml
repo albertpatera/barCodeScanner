@@ -1,0 +1,19 @@
+<resources>
+
+    <!--<style name="Theme.ScanKitDeTmo.NoActionBar">-->
+    <!-- <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+
+    <style name="Theme.ScanKitDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ScanKitDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <!--<style name="Theme.ScanKitDemo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+</resources>

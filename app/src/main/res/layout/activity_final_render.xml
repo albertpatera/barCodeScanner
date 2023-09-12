@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".core.FinalRenderActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/product"
+        android:textAllCaps="true"
+        android:textColor="#4A148C"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+
+    <ImageView
+        android:id="@+id/arrow_action"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:srcCompat="@drawable/ic_baseline_arrow_downward_24" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="27dp" />
+
+    <TextView
+        android:id="@+id/tap_to_upload_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/click_to_upload_cloud_symbol"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/upload_to_server"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:background="#FFFFFF"
+
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/upload_and_share_foreground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/leave_manualy"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_exit_to_app_24"
+            android:gravity="bottom|right|top"
+            android:text="@string/end_app"
+            android:textSize="27dp" />
+
+        <TextView
+            android:id="@+id/copyright"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:gravity="center"
+            android:text="@string/mwc_detail"
+            android:textColor="#4A000000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
