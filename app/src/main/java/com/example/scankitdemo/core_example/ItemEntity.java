@@ -6,17 +6,17 @@ public class ItemEntity {
     private final Integer plu;
 
 
-    public ItemEntity(Integer firstName, Integer plu, String age, Integer id) {
-        this.kusy = firstName;
+    public ItemEntity(Integer pcs, Integer plu, String age, Integer id) {
+        this.pcs = pcs;
         this.plu = plu;
 
     }
 
-    public Integer getFirstName() {
-        return kusy;
+    public Integer getPieces() {
+        return pcs;
     }
 
-    public Integer getLastName() {
+    public Integer getPlu() {
         return plu;
     }
 
@@ -27,9 +27,9 @@ public class ItemEntity {
 
     @Override
     public String toString() {
-        return "BusinessEntity{" +
-                "firstName='" + kusy + '\'' +
-                ", lastName='" + plu + '\'' +
+        return "ItemEntity{" +
+                "pieces='" + pcs + '\'' +
+                ", plu='" + plu + '\'' +
 
                 '}';
     }
